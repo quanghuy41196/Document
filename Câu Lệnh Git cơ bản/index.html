@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Các Câu Lệnh Git cơ bản</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Câu Lệnh Cơ Bản</h1>
+        </div>
+        <hr style="width: 600px; margin: auto;">
+        <br><br>
+        <table border="1" width="100%" cellspacing="0" cellpadding="10" style="line-height: 100px;">
+            <tr>
+                <td>
+                    <h2>git config</h2>
+                </td>
+                <td>
+                    Dùng để set user name và email của bạn trong main configuration file.
+                    <br>
+                    Cách dùng : Để kiểm tra tên và kiểu email trong cấu hình dùng git config -- global user.name và git config -- global user.email. Để set email hoặc tên mới git config -- global user.name = “Quang Huy” và git config -- global user.email = “quanghuy41196@gmail.com”
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>git init</h2>
+                </td>
+                <td>
+                    Dùng để khởi tạo 1 git repository 1 project mới hoặc đã có.
+                    <br>
+                    Cách dùng : git init trong thư mục gốc của dự án.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>git clone</h2>
+                </td>
+                <td>
+                    Dùng để Copy 1 git repository từ remote source.
+                    <br>
+                    Cách dùng : git clone <:clone git link url:>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>git status</h2>
+                </td>
+                <td>
+                    Dùng để check trạng thái của những file bạn đã thay đổi trong thư mục làm việc. VD: Tất cả các thay đổi cuối cùng từ lần commit cuối cùng.
+                    <br>
+                    Cách dùng : git status trong thư mục làm việc.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>git add</h2>
+                </td>
+                <td>
+                    Dùng để hêm thay đổi đến stage/index trong thư mục làm việc.
+                    <br>
+                    Cách dùng : git add .
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>git commit</h2>
+                </td>
+                <td>
+                    Dùng để ghi lại việc thêm/ thay đổi file hay thư mục vào repository
+                    <br>
+                    Cách dùng : git commit -m ”comment đã thêm/ thay đổi để quản lý”
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div class="title">
+            <h1>Câu Lệnh Chưa Sử Dụng</h1>
+        </div>
+        <hr style="width: 600px; margin: auto;">
+        <br><br>
+        <table border="1" width="100%" cellspacing="0" cellpadding="10" style="text-align: center; line-height: 100px;">
+            <tr class="do-not">
+                <td>
+                    <h2>git push/git pull</h2>
+                </td>
+                <td>
+                    Dùng để Push hoặc Pull các thay đổi đến remote. Nếu bạn đã added và committed các thay đổi và bạn muốn đẩy nó lên hoặc remote của bạn đã update và bạn apply tất cả thay đổi đó trên code của mình.
+                    <br>
+                    Cách dùng : git pull <:remote:>
+                        <:branch:> and git push <:remote:>
+                                <:branch:>
+                </td>
+            </tr>
+            <tr class="do-not">
+                <td>
+                    <h2>git branch</h2>
+                </td>
+                <td>
+                    Dùng để liệt kê tất cả các branch (nhánh).
+                    <br>
+                    Cách dùng : git branch hoặc git branch -a
+                </td>
+            </tr>
+            <tr class="do-not">
+                <td>
+                    <h2>git checkout</h2>
+                </td>
+                <td>
+                    Dùng để Chuyển sang branch khác
+                    <br>
+                    Cách dùng : git checkout <: branch:> hoặc ** _ git checkout -b <: branch:> nếu bạn muốn tạo và chuyển sang một chi nhánh mới
+                </td>
+            </tr>
+            <tr class="do-not">
+                <td>
+                    <h2>git stash</h2>
+                </td>
+                <td>
+                    Dùng để lưu thay đổi mà bạn không muốn commit ngay lập tức.
+                    <br>
+                    Cách dùng : git stash trong thư mục làm việc của bạn.
+                </td>
+            </tr>
+            <tr class="do-not">
+                <td>
+                    <h2>git merge</h2>
+                </td>
+                <td>
+                    Dùng để hợp nhất 2 branch lại với nahu.
+                    <br>
+                    Cách dùng : Chuyển tới branch bạn muốn merge rồi dùng git merge <:branch_ban_muon_merge:>
+                </td>
+            </tr>
+            <tr class="do-not">
+                <td>
+                    <h2>git reset</h2>
+                </td>
+                <td>
+                    Tác dụng: Bạn đã đưa một tập tin nào đó vào Staging Area nhưng bây giờ bạn muốn loại bỏ nó ra khỏi đây để không phải bị commit theo.
+                    <br>
+                    Cách dùng : git reset HEAD tên_file
+                </td>
+            </tr>
+            <tr class="do-not">
+                <td>
+                    <h2>git remote</h2>
+                </td>
+                <td>
+                    Tác dụng: Để check remote/source bạn có hoặc add thêm remote
+                    <br>
+                    Cách dùng: git remote để kiểm tra và liệt kê. Và git remote add <: remote_url:> để thêm.
+                </td>
+            </tr>
+            <tr class="do-not">
+                <td>
+                    <h2>git add</h2>
+                </td>
+                <td>
+                    Dùng để đưa một tập tin vào Staging Area
+                    <br>
+                    Cách dùng: git add tên_file hoặc muốn thêm hết file của thư mục thì git add all
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="back-to-top"><i class="fas fa-arrow-up"></i></div>
+    <script>
+    $(document).ready(function() {
+        $('.back-to-top').click(function(event) {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1400);
+        })
+    })
+    </script>
+</body>
+
+</html>

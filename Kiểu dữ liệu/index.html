@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Các Câu Lệnh Git cơ bản</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title"><h1>Kiểu dữ liệu</h1></div>
+		<hr style="width: 600px; margin: auto;">
+		<br><br>
+		<table border="1" width="100%" cellspacing="0" cellpadding="10" style="line-height: 100px;">
+			<tr>
+				<td><h2>Kiểu number</h2></td>
+				<td>
+					Là các số bất kỳ loại nào: số nguyên hoặc dấu phẩy động.
+					<br>
+					<h2>Exam</h2>
+					var x = 20; // gán giá trị cho x = 20, vậy x là kiểu Number
+					<br>
+					var y = 20,234; // gán giá trị cho y = 20,234 vậy y là kiểu Number
+					<br>
+					console.log(x); //Hiện thị x ra màn hình console của trình duyệt
+					<br>
+					console.log(y); //Hiện thị y ra màn hình console của trình duyệt
+					<br>
+					console.log(x+y); //Hiện thị tổng x + y ra màn hình console của trình duyệt
+				</td>
+			</tr>
+			<tr>
+				<td><h2>Kiểu string</h2></td>
+				<td>
+					Chuỗi có thể có một hoặc nhiều ký tự, không có loại ký tự đơn riêng biệt.
+					<br>
+					<h2>Exam</h2>
+					var x = "con ga" // x được gán giá trị là "con ga", vậy x là kiểu String
+					<br>
+					var y = 'mai' // y được gán giá trị là "mai", vậy x là kiểu String
+				</td>
+			</tr>
+			<tr>
+				<td><h2>Kiểu boolean</h2></td>
+				<td>
+					boolean nó chỉ trả về 2 giá trị là ” True ” or ” False ”
+					<br>
+					<h2>Exam</h2>
+					var x = true; // x được gán giá trị cho true, vậy x là kiểu Boolean
+					<br>
+					var y = false; // y được gán giá trị cho false, vậy y là kiểu Boolean
+					<br>
+					var m = 1;
+					<br>
+					var n = 2;
+					<br>
+					console.log(m = n);
+					// Hiện thị ra màn hình console của trình duyệt kết quả m = n, ở đây nó sẽ trả về false
+				</td>
+			</tr>
+			<tr>
+				<td><h2>Kiểu Null</h2></td>
+				<td>
+					Nó chỉ là một giá trị đặc biệt có ý nghĩa “không có gì”, “trống rỗng” hoặc “giá trị không rõ”.
+					<br>
+					<h2>Exam</h2>
+					var n = null; // n được gán giá trị cho null, vậy n là kiểu Null
+					<br>
+					console.log(n); 
+					// Hiện thị ra màn hình console của trình duyệt giá trị của n, ở đây nó sẽ trả về null
+				</td>
+			</tr>
+			<tr>
+				<td><h2>Kiểu Underfined</h2></td>
+				<td>
+					Là biến chưa được có giá trị.
+					<br>
+					<h2>Exam</h2>
+					var x; // x chưa được gán giá trị nào
+					<br>
+					console.log(x); 
+					//Hiện thị ra màn hình console giá trị của x, ở đây kết quả trả về là underfined
+				</td>
+			</tr>
+			<tr>
+				<td><h2>Kiểu Object</h2></td>
+				<td>
+					Là kiểu dữ liệu đối tượng, một đối tượng ở đây là chỉ một đối tượng thật trong cuộc sống. Ví dụ một chiếc xe tăng, một con mèo, một lá cờ Đảng … Đối tượng được chia làm 2 phần là: thuộc tính và phương thức.
+					<br>
+					<h2>Exam</h2>
+					var meo = {
+					ten: 'meomeo', 
+					maulong: 'den',
+					tuoi: 3
+					};
+					<br>
+					// Khởi tạo một object là meo có tên là 'meomeo' màu lông là 'den' và có tuổi là 3
+					<br>
+					console.log(meo.ten);
+					// Hiện thị ra màn hinh console của trình duyệt ten của meo, ở đây nó sẽ trả về 'meomeo'
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+
+	<script>
+		$(document).ready(function(){
+			$('.back-to-top').click(function(event){
+				$('html,body').animate({
+					scrollTop: 0},1400);
+			})
+		})
+	</script>
+</body>
+</html>
